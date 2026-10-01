@@ -1,0 +1,513 @@
+/* ==========================================
+   GENERAL
+========================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f8fafc;
+
+    color: #212529;
+}
+
+
+section {
+    scroll-margin-top: 70px;
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+.navbar-brand {
+    font-size: 22px;
+}
+
+
+.nav-link {
+    margin-left: 8px;
+
+    transition: 0.3s;
+}
+
+
+.nav-link:hover {
+    color: #dbeafe !important;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero-section {
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e0f2fe,
+            #f8fafc
+        );
+
+    padding: 80px 0;
+}
+
+
+.hero-section h1 {
+    font-size: 48px;
+
+    font-weight: 700;
+
+    color: #0d47a1;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-section p {
+    color: #475569;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-icon {
+    font-size: 180px;
+
+    color: #0d6efd;
+
+    opacity: 0.9;
+}
+
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.section-padding {
+    padding: 70px 0;
+}
+
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.section-title h2 {
+    color: #0d47a1;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+.section-title p {
+    color: #64748b;
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.portal-card {
+    border: none;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+}
+
+
+.portal-card .card-body {
+    padding: 35px;
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-label {
+    font-weight: 600;
+
+    color: #334155;
+}
+
+
+.form-control,
+.form-select {
+    padding: 12px;
+
+    border-radius: 8px;
+
+    border: 1px solid #cbd5e1;
+}
+
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(
+            13,
+            110,
+            253,
+            0.15
+        );
+}
+
+
+.gender-box {
+    display: flex;
+
+    gap: 25px;
+
+    padding-top: 8px;
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn {
+    border-radius: 8px;
+
+    padding: 11px 22px;
+
+    font-weight: 600;
+}
+
+
+.btn-primary {
+    box-shadow:
+        0 3px 8px rgba(
+            13,
+            110,
+            253,
+            0.25
+        );
+}
+
+
+/* ==========================================
+   SUCCESS MESSAGE
+========================================== */
+
+#successMessage {
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+}
+
+
+/* ==========================================
+   APPOINTMENT TABLE
+========================================== */
+
+.table {
+    vertical-align: middle;
+}
+
+
+.table thead th {
+    white-space: nowrap;
+}
+
+
+.table td {
+    padding: 14px;
+}
+
+
+.status-badge {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background-color: #d1fae5;
+
+    color: #047857;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   HEALTH INFORMATION
+========================================== */
+
+.health-card {
+    border: none;
+
+    border-left: 5px solid #0d6efd;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+}
+
+
+.health-card .card-body {
+    padding: 25px;
+}
+
+
+.health-item {
+    background-color: #f8fafc;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+    height: 100%;
+}
+
+
+.health-item small {
+    color: #64748b;
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+.health-item strong {
+    color: #1e3a8a;
+}
+
+
+.health-icon {
+    font-size: 55px;
+
+    color: #0d6efd;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   SERVICES
+========================================== */
+
+.service-card {
+    border: none;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(
+            0,
+            0,
+            0,
+            0.07
+        );
+
+    transition: 0.3s;
+}
+
+
+.service-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 10px 25px rgba(
+            0,
+            0,
+            0,
+            0.12
+        );
+}
+
+
+.service-icon {
+    font-size: 50px;
+
+    color: #0d6efd;
+
+    margin-bottom: 15px;
+}
+
+
+.service-card h4 {
+    color: #1e3a8a;
+
+    margin-bottom: 12px;
+}
+
+
+/* ==========================================
+   TECHNOLOGIES
+========================================== */
+
+.technology-card {
+    text-align: center;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    min-height: 190px;
+
+    box-shadow:
+        0 5px 15px rgba(
+            0,
+            0,
+            0,
+            0.07
+        );
+
+    transition: 0.3s;
+}
+
+
+.technology-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.technology-card h3 {
+    color: #0d6efd;
+
+    margin-bottom: 15px;
+}
+
+
+.technology-card p {
+    color: #64748b;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+    background-color: #0f172a;
+
+    color: white;
+
+    padding: 35px 0;
+}
+
+
+footer h5 {
+    margin-bottom: 12px;
+}
+
+
+footer p {
+    color: #cbd5e1;
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 991px) {
+
+    .hero-section h1 {
+        font-size: 38px;
+    }
+
+
+    .hero-icon {
+        font-size: 120px;
+
+        margin-top: 30px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .hero-section {
+        text-align: center;
+
+        padding: 60px 20px;
+    }
+
+
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+
+    .hero-icon {
+        font-size: 100px;
+    }
+
+
+    .gender-box {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    .portal-card .card-body {
+        padding: 20px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+
+    .btn-lg {
+        width: 100%;
+
+        margin: 5px 0 !important;
+    }
+
+}
